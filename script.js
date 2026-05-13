@@ -19,7 +19,8 @@ const dragoes = [
         
     },
 
-]
+]  
+  // comentario teste commit 
     const catalogo = document.getElementById("catalogo"); 
     dragoes.forEach(function(dragon) {
         const card = document.createElement("div");
