@@ -1,80 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #1a0f05;
-    color: #f4e4b8;
-    font-family: georgia, serif;
-    text-align: center;
-    padding: 40px;
-
-}
-
-header h1 {
-    font-size: 48px;
-    color: #daa520;
-}
-
-header p {
-    font-size: 16px;
-    color: #a07840;
-    font-style: italic;
-}
-
-/* css da parte do catalogo */
-#catalogo {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
-    margin-top: 40px;
-}
-.card {
-    background-color: #2a1a08;
-    border: 2px solid #daa520;
-    border-radius: 8px;
-    padding: 24px;
-    width: 260px;
-    text-align: left;
-}
-.card h2 {
-    color: #daa520;
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-.card .classe {
-    color: #a07840;
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-.card .descricao {
-    color: #f4e4b8;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 12px;
-}
-.card .perigo {
-  color: #8b1a1a;
-  font-weight: bold;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a0f05;
+    font-family: Georgia, serif;
 }
 
+/* A qui vem a animação 3d */
+.wrapper {
+    position: relative;
+    width: 25rem;
+    height: 36rem;
+    perspective: 250rem;
+    transition: width 1s ease;
+}
 
-#busca-container {
-    margin-top: 20px;
+.wrapper.aberto {
+    width: 50rem;
+}
+/* capa do livro */
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #5c2a00;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+}
+
+.cover.cover-left{
+    z-index: -1
+}
+
+.cover.cover-right {
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: transform 1s ease;
+    transform-origin: left;
+    border-radius: 0;
+    background-color: #3d1f0a;
+}
+.cover.cover-right.turn{
+    transform:  rotateY(-180deg);
+}
+
+/* conteudo do livro */
+.book {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:flex;
+}
+
+/* PAginas */
+.book-page {
+    position:absolute;
+    width: 50%;
+    height: 100%;
+    background: #f4e4b8;
+    padding: 2rem;
+    color: #2c1a0e;
+}
+
+.book-page.page-left{
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-#busca {
-    background-color: #2a1a08;
-    border: 2px solid #daa520;
-    border-radius: 6px;
-    color: #f4e4b8;
-    font-family: georgia, serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    width: 300px;
-    outline: none;
-
+.capa-intertna h1 {
+    font-size: 1.8rem;
+    color: #5c2a00;
+    margin-bottom: 0.5rem;
 }
 
-#busca::placeholder {
-    color: #a07840;
+.capa-interna p {
     font-style: italic;
+    color: #8b5e3c;
 }
+
+/* virada da pagina(direita a esquerda) */
+.book-page.page-right.turn {
+    transform: rotateY(-180deg);
+}
+
+.book-page.page-right {
+    right: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: transform 1s ease;
+
+}
+
+/* frente e verso de folha */
+.page-front, .page-back {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f4e4b8;
+    padding: 2rem;
+    backface-visibility: hidden;
+}
+.book-page.page-right {
+    right: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: transform 1s ease;
+    backface-visibility: hidden; /* ← adiciona essa linha */
+}
+
+.page-front {
+    transform: rotateY(0deg);
+}
+
+.page-back {
+    transform: rotateY(180deg);
+}
+
+/* botos de virar a pag */
+
+.nextprev-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    font-size:2rem;
+    cursor: pointer;
+    color: #5c2a00;
+    transition: color 0.3s;
+
+}
+
+.nextprev-btn:hover {
+    color: #daa520;
+}
+
+.nextprev-btn.back {
+    right: auto;
+    left: 1.5rem;
+}
+
