@@ -2,7 +2,6 @@ const coverRight = document.querySelector('.cover.cover-right')
 const coverLeft = document.querySelector('.cover.cover-left')
 const wrapper = document.querySelector('.wrapper')
 
-// abre o livro automaticamente
 setTimeout(() => {
     coverRight.classList.add('turn')
     wrapper.classList.add('aberto')
@@ -13,7 +12,6 @@ setTimeout(() => {
     coverLeft.style.display = 'none'
 }, 3200)
 
-// busca os dragões e gera as páginas
 fetch('dragoes.json')
     .then(function(resposta) {
         return resposta.json()
@@ -35,6 +33,7 @@ function gerarPaginas(dragoes) {
             <div class="page-front">
                 <h2>${dragao.nome}</h2>
                 <p class="classe">${dragao.classe}</p>
+                <img src="${dragao.imagem}" alt="${dragao.nome}" class="dragao-img">
                 <p class="descricao">${dragao.descricao}</p>
                 <span class="nextprev-btn" data-page="turn-${index + 1}">›</span>
             </div>
@@ -62,12 +61,10 @@ function ativarBotoes() {
             const totalPaginas = todasPaginas.length
 
             if (page.classList.contains('turn')) {
-                // voltando — pega o número da página e coloca z-index crescente
                 const num = parseInt(pageId.replace('turn-', ''))
                 page.classList.remove('turn')
                 page.style.zIndex = totalPaginas - num + 1
             } else {
-                // avançando — página virada vai para frente
                 const num = parseInt(pageId.replace('turn-', ''))
                 page.classList.add('turn')
                 page.style.zIndex = totalPaginas + num

@@ -1,74 +1,62 @@
 [
   {
-    "nome": "Fúria da Noite",
+    "nome": "Banguela",
     "classe": "Strike",
     "descricao": "A Fúria da Noite mais famosa de Berk. Veloz, inteligente e leal. É o único da sua espécie conhecido. Nunca se mostra, nunca erra.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/9e/Site_toothless-statistics.png"
+    "imagem": "imagens/furiaNoite.webp"
   },
   {
     "nome": "Fúria da Luz",
     "classe": "Strike",
     "descricao": "Uma dragoa branca da espécie Fúria da Luz. Mais selvagem e desconfiada que Banguela, mas igualmente veloz e poderosa.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5e/Light_Fury_-_How_To_Train_Your_Dragon_The_Hidden_World.png"
-  },
-  {
-    "nome": "Nadder Mortal",
-    "classe": "Sharp",
-    "descricao": "O Nadder Mortal da Astrid. Vaidosa e ágil, lança espinhos venenosos pela cauda e cospe fogo de alta temperatura.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/4/4e/Stormfly_FoF.png"
-  },
-  {
-    "nome": "Pesadelo Monstruoso",
-    "classe": "Stoker",
-    "descricao": "O Pesadelo Monstruoso do Snotlout. Pode incendiar o próprio corpo sem se machucar. Teimoso e temperamental.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/8e/Hookfang_FoF.png"
-  },
-  {
-    "nome": "Zipper Arrepiante",
-    "classe": "Mystery",
-    "descricao": "O ZipplerArrepiante Horrendo de Duas cabeças, uma cospe gás e a outra faísca — juntas causam uma explosão.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/5d/Barf_Belch_FoF.png"
+    "imagem": "imagens/furialuz.webp"
   },
   {
     "nome": "Skrill",
     "classe": "Strike",
     "descricao": "Um dos dragões mais perigosos de Berk. Absorve raios e os redireciona como projéteis. Extremamente agressivo e difícil de treinar.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/2/2e/Site_skrill-statistics.png"
-  },
-  {
-    "nome": "Morte das Sombras",
-    "classe": "Boulder",
-    "descricao": "Um dragão subterrâneo que perfura rochas com seus dentes rotativos. Cego, usa ecolocalização para caçar.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/8/83/Site_whisperingdeath-statistics.png"
+    "imagem": "imagens/skrill.jpg"
   },
   {
     "nome": "Gronckle",
     "classe": "Boulder",
     "descricao": "Um dragão robusto e lento que come pedras e minerais. Apesar da aparência intimidadora, pode ser bem amigável quando treinado.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/9/96/Site_gronckle-statistics.png"
+    "imagem": "imagens/gronkle.jpg"
+  },
+  {
+    "nome": "Morte Rubra",
+    "classe": "Boulder",
+    "descricao": "Um dragão subterrâneo que perfura rochas com seus dentes rotativos. Cego, usa ecolocalização para caçar.",
+    "imagem": "imagens/morteRubra.jpg"
+  },
+  {
+    "nome": "Pesadelo Monstruoso",
+    "classe": "Stoker",
+    "descricao": "Um dos maiores e mais ferozes dragões de Berk. Pode incendiar o próprio corpo inteiro com seu gel inflamável.",
+    "imagem": "imagens/pesadeloMonstruoso.jpg"
   },
   {
     "nome": "Terror Terrível",
     "classe": "Stoker",
     "descricao": "O menor dragão de Berk, mas não menos perigoso. Viaja em bandos e pode ser surpreendentemente feroz apesar do tamanho.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/5/52/Site_terrible-terror-statistics.png"
+    "imagem": "imagens/terrorTerrivel.jpg"
   },
   {
-    "nome": "Besta Implacavel",
-    "classe": "Tidal",
-    "descricao": "O maior dragão conhecido — o Rei dos Dragões. Possui o poder de controlar outros dragões e cuspir gelo em grandes quantidades.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/b/b5/Bewilderbeast.png"
+    "nome": "Nadder Mortal",
+    "classe": "Sharp",
+    "descricao": "Ágil e vaidoso, o Nadder Mortal possui espinhos venenosos na cauda e fogo de magnésio — um dos mais quentes entre os dragões.",
+    "imagem": "imagens/nadder.webp"
   },
   {
-    "nome": "Pesadelo Voador",
+    "nome": "Zipper Arrepiante",
     "classe": "Mystery",
-    "descricao": "Um dragão fantasmagórico que brilha com uma luz azul eerie. Paralisa suas vítimas com névoa antes de atacar.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/f/f5/Site_flightmare-statistics.png"
+    "descricao": "Duas cabeças, uma cospe gás e a outra faísca — juntas causam explosões devastadoras.",
+    "imagem": "imagens/zipperArepiante.jpg"
   },
   {
     "nome": "TufãoMerang",
     "classe": "Stoker",
     "descricao": "Um dragão enorme que cria redemoinhos de fogo ao voar em espiral. Seu fogo girante pode destruir florestas inteiras.",
-    "imagem": "https://static.wikia.nocookie.net/howtotrainyourdragon/images/e/e4/Site_typhoomerang-statistics.png"
+    "imagem": "imagens/tufaomerang.jpg"
   }
 ]
